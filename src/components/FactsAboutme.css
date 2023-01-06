@@ -1,0 +1,25 @@
+.FactsAboutme{
+    margin-top: 15vh;
+    background-color: rgba(6, 16, 26, 1);
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FactsAboutme .flex-box{
+gap:8rem;
+}
+.FactsAboutme .flex-box .contentLeft{
+    width: 45%;
+}
+.FactsAboutme .flex-box .contentLeft h2{
+    margin-bottom: 1rem;
+}
+.FactsAboutme .flex-box .contentRight{
+display: flex;
+gap: 3rem;
+}
+.FactsAboutme .flex-box .contentRight img{
+    width: 25px;
+    margin-right: .5rem;
+}

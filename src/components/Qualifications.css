@@ -1,0 +1,42 @@
+.qualification{
+    margin-top: 12vh;
+    padding: 13vh 0;
+    background-color:#06101a ;
+}
+.qualification .head{
+    text-align: center;
+    padding: 0 12rem;
+}
+.qualification .head h2{
+    margin: .3rem 0 1rem 0;
+}
+.qualification .grid-box{
+    margin-top: 4rem;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+.qualification .grid-box .colum{
+  
+    box-shadow: 0 0 10px 4px black;
+    padding: 3rem;
+}
+.qualification .grid-box .colum h4{
+  margin: 1rem 0;
+}
+.box{
+    background-color: #00bcd4;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grey{
+    color:#767f86 ;
+    margin-left: 1rem;
+}
+.darkgrey{
+    color: #666e74;
+    margin-left: 1rem;
+}

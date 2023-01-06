@@ -1,0 +1,41 @@
+.whatwedo{
+    margin-top: 15vh;
+}
+.whatwedo .topContent{
+    text-align: center;
+    padding: 0 12rem;
+}
+.whatwedo .topContent h2{
+    margin: .5rem 0;
+}
+.whatwedo .topContent p{
+               margin: 1.5rem 0;
+}
+.bottomContent{
+    margin-top: 10vh;
+}
+.bottomContent .flex-box{
+gap: 3rem;
+}
+.bottomContent .column{
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 1rem;
+}
+.circle{
+    background-color: #00bcd4;
+    border-radius: 50%;
+    width:6rem ;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.viewservice{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
