@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className='footer'>
              <div class="container">
-            <div class="grid-box">
+            <div class="flex-box">
                 <div class="Social">
                     <div class="logo">
                         <h1><span>.L</span>O<span>GO</span></h1>

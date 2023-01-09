@@ -1,5 +1,5 @@
 .testimonials{
-    padding: 15vh 0;
+    padding: 10vh 0;
 }
 .testimonials .head{
     text-align: center;
@@ -7,4 +7,39 @@
 }
 .testimonials .head h2{
     margin: .3rem 0 1rem 0;
+}
+.item{
+    width: 100%;
+}
+.item p{
+    text-align: center;
+}
+.qimg{
+   max-width: 80px;
+}
+.aimg{
+    max-width: 80px;
+}
+
+
+
+.testimonials .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+@media screen and (max-width:640px) {
+    .testimonials .head{
+        text-align: center;
+        padding: 0 0rem;
+    }
 }

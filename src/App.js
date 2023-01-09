@@ -9,11 +9,13 @@ import Qualification from './components/Qualification';
 import Testimonials from './components/Testimonials';
 import MyBlogs from './components/MyBlogs';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
-    <NavBar/>
+   
+    <Header/>
 <AboutUs/>
 <WhatWedo/>
 <FactsAboutme/>

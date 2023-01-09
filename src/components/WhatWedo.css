@@ -1,9 +1,10 @@
 .whatwedo{
-    margin-top: 15vh;
+   padding: 12vh 0;
 }
 .whatwedo .topContent{
     text-align: center;
-    padding: 0 12rem;
+   max-width: 600px;
+   margin-inline: auto;
 }
 .whatwedo .topContent h2{
     margin: .5rem 0;
@@ -38,4 +39,14 @@ gap: 1rem;
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+}
+@media screen and (max-width:640px){
+    .whatwedo .topContent{
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .bottomContent .flex-box{
+        flex-direction: column;
+        gap: 3rem;
+        }
 }

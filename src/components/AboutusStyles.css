@@ -1,9 +1,16 @@
 .aboutus{
-    margin-top: 20vh;
+   padding: 12vh 0;
+    background-color: #06101a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15vh 0;
 }
 .aboutus .grid-box{
     grid-template-columns: 1fr 1fr;
  gap: 10%;
+ align-items: center;
+ justify-content: center;
 }
 
 
@@ -15,9 +22,6 @@ border-right: none;
 }
 .aboutus .rightContent{
     padding: 1rem 5rem 0  0;
-}
-.aboutus .rightContent h3{
-
 }
 .aboutus .rightContent h2{
 margin: 2rem 0;
@@ -41,4 +45,25 @@ margin-top: 1rem;
     align-items: center;
     flex-direction: column;
     gap:1rem
+}
+@media screen and (max-width:640px){
+    .aboutus .grid-box{
+        grid-template-columns: 1fr;
+     gap: 0%;
+    } 
+    .aboutus .rightContent .skills{
+        display: flex;
+        
+        gap: 2rem;
+        margin-top: 0rem;
+        }
+        .aboutus .rightContent{
+            padding: 1rem 0rem 0 0rem;
+        }
+        .aboutus .rightContent .skills{
+            flex-direction: column;
+        }
+        .CircularProgressbar{
+            width: 50%;
+        }
 }

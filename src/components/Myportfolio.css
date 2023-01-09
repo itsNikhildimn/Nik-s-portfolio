@@ -1,5 +1,5 @@
 .portfolio{
-    margin-top: 15vh;
+   padding: 12vh 0;
 }
 .portfolio .head{
     text-align: center;
@@ -16,9 +16,37 @@
     list-style: none;
     gap: 3rem;
 }
+.portfolio nav ul li:hover{
+color:#00bcd4 ;
+text-decoration: line-through;
+}
 .portfolio .grid-box{
     margin-top: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: none;
+}
+@media screen and (max-width:640px){
+    .portfolio .head{
+        text-align: center;
+        padding: 0 0rem;
+    }
+    .portfolio .grid-box{
+        margin-top: 2rem;
+        grid-template-columns: 1fr  ;
+        gap:0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio nav ul{
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 2rem;
+font-size: .8rem;
+    }
 }

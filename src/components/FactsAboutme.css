@@ -1,7 +1,7 @@
 .FactsAboutme{
-    margin-top: 15vh;
+    padding: 12vh 0;
     background-color: rgba(6, 16, 26, 1);
-    height: 35vh;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,4 +22,19 @@ gap: 3rem;
 .FactsAboutme .flex-box .contentRight img{
     width: 25px;
     margin-right: .5rem;
+}
+@media screen and (max-width:640px) {
+    .FactsAboutme .flex-box{
+        flex-direction: column;
+        gap:2rem;
+        } 
+        .FactsAboutme .flex-box .contentLeft{
+            width: 100%;
+            text-align: center;
+        }
+        .FactsAboutme .flex-box .contentRight{
+            flex-direction: column;
+          
+            align-items: center;
+        }
 }

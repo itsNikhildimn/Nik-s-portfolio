@@ -1,5 +1,5 @@
 .blogs{
-    padding: 15vh 0;
+    padding: 12vh 0;
     background-color:#06101a ;
 }
 .blogs .head{
@@ -26,9 +26,23 @@ padding: 0 12rem ;
     margin: 1rem 0;
 }
 .blogs .text {
-  
     padding: 1rem;
 }
 .blogs .column{
-    box-shadow: 0 0 10px 4px black;
+    box-shadow: 0 0 10px 7px black;
+}
+.blogs .column:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+@media screen and (max-width:640px) {
+    .blogs .head{
+        text-align: center;
+        padding: 0 0rem ;
+        }
+        .blogs .grid-box{
+            margin-top: 5rem;
+            grid-template-columns: 1fr ;
+            gap: 2rem;
+        }
 }

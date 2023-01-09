@@ -1,9 +1,10 @@
 .footer{
-    padding: 15vh 0 0 0;
+    padding: 10vh 0 0 0;
 }
-.footer .grid-box{
+.footer .flex-box{
 grid-template-columns: 1fr 1fr 2fr;
 gap: 5rem;
+
 }
 .footer .Social p{
     margin: 1rem 0;
@@ -17,11 +18,22 @@ gap: 5rem;
     list-style: none;
     gap: 1rem;
 }
+.footer ul li:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.5);
+}
 hr{
     background-color: rgb(201, 199, 199);
 }
 .footer .contactus p{
     margin: .6rem 0;
+}
+.footer .form{
+    display: flex;
+    justify-content:center;
+    align-items: left;
+    flex-direction: column;
+  
 }
 .footer .form .input{
     margin-top:1rem ;
@@ -42,6 +54,7 @@ textarea{
     background-color:#06101a ;
     border: 1px solid #a7a7a7;
     padding: .5rem;
+    margin-bottom: 1rem;
 }
 .cite{
     background-color: #00bcd4;
@@ -51,4 +64,17 @@ textarea{
     justify-content: center;
     align-items: center;
     margin-top: 15vh;
+}
+
+
+@media screen and (max-width:1190px) {
+    .footer .flex-box{
+      flex-direction: column;
+
+        }
+        .footer .form .input{
+           flex-direction: column;
+           
+        }
+      
 }

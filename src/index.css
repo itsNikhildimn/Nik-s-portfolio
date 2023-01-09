@@ -18,6 +18,8 @@ body{
   background-color: antiquewhite;
   color: #fff;
   background-color: #050d16;
+  max-width: 1922px;
+  margin-inline: auto;
 }
 .flex-box{
   display: flex;
@@ -26,7 +28,7 @@ body{
   display: grid;
 }
 .container{
-max-width: 1171px;
+max-width: 1173px;
 margin-inline: auto;
 
 }
@@ -37,6 +39,11 @@ margin-inline: auto;
   background-color: #00bcd4;
 
 }
+.btn:hover{
+  background-color: transparent;
+  border: 1px solid #00bcd4;
+  color: #00bcd4;
+}
 .btn-light{
   width:9rem ;
   height:2.3rem ;
@@ -44,6 +51,10 @@ margin-inline: auto;
   background-color: transparent;
   border: 1px solid #fff;
    margin-left: 1.5rem;
+}
+.btn-light:hover{
+  border:1px solid #00bcd4;
+  color: #00bcd4;
 }
 p{
   color: rgb(212, 212, 212);
