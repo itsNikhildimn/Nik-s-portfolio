@@ -1,13 +1,16 @@
 .portfolio{
    padding: 12vh 0;
+  
 }
 .portfolio .head{
     text-align: center;
-    padding: 0 12rem;
+    max-width: 740px;
+   margin-inline: auto;
 }
 .portfolio .head h2{
     margin: .3rem 0 1rem 0;
 }
+
 .portfolio nav ul{
     margin-top: 3rem;
     display: flex;
@@ -16,15 +19,30 @@
     list-style: none;
     gap: 3rem;
 }
-.portfolio nav ul li:hover{
+.portfolio nav ul li{
+    cursor: pointer;
+}
+.portfolio nav ul li:active{
 color:#00bcd4 ;
 text-decoration: line-through;
 }
-.portfolio .grid-box{
-    margin-top: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: none;
+.portfolio .portfolio-items{
+  width: 100%;
+}
+.portfolio .portfolio-itemss .item{
+    float: left;
+}
+@media screen and (max-width:1024px){
+    .portfolio .grid-box{
+        margin-top: 2rem;
+        grid-template-columns: 1fr 1fr  ;
+      
+        gap:0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media screen and (max-width:640px){
     .portfolio .head{

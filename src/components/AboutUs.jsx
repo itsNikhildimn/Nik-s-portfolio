@@ -11,7 +11,7 @@ const AboutUs = () => {
     <div className='aboutus'>
             <section class="section">
         <div class="container">
-            <div class="grid-box">
+            <div class="flex-box">
                 <div class="leftContent ">
                     <img src={Aimg} alt="" />
                    
@@ -36,7 +36,7 @@ const AboutUs = () => {
                         </div>
                         <div class="col">
                         {/* <img src= {percentimg} alt="image2"/> */}
-                        <CircularProgressbar size={50} value={50} text={`${80}%`} /> 
+                        <CircularProgressbar  value={50} text={`${80}%`} /> 
                             <h6>WORDPRESS</h6>
                         </div>
                     </div>

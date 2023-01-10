@@ -1,7 +1,7 @@
 
 import './App.css';
 import AboutUs from './components/AboutUs';
-import NavBar from './components/NavBar';
+
 import WhatWedo from './components/WhatWedo';
 import FactsAboutme from './components/FactsAboutme';
 import Portfolio from './components/Portfolio';

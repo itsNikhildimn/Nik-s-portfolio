@@ -56,11 +56,21 @@ max-width: 350px;
     padding-left: 1rem;
     margin-bottom: 3rem;
 }
+.buttons{
+ 
+}
+.btn-light{
+    margin-left: 2rem;
+}
 
 @media screen and (max-width:1190px){
    .container{
     padding: 0 5rem;
    }
+   .content{
+    gap: 5rem;
+   }
+ 
         .nav-menu{
             flex-direction: column;
             justify-content: center;
@@ -69,20 +79,26 @@ max-width: 350px;
             height: 100vh;
             background-color:rgba(250, 241, 241, 0.8) ;
             position: absolute;
-            top: 00%;
+            top: 0%;
             right: -100%;
             transition: 0.5s;
         }
         .nav-menu.active{
-           right:0%;
-            background-color: cadetblue;
+           right:-10%;
+            background-color: rgb(6,16,26 );
             opacity: .8;
         }
         .hamburger{
             display: block;
-        
+            margin-top: 1rem;
             z-index: 1;
         } 
+    }
+    @media screen and (max-width:900px) {
+.content{
+    flex-direction: column;
+    margin-inline: auto;
+}
     }
    @media screen and (max-width:640px) {
     .header .content h1{
@@ -107,5 +123,16 @@ max-width: 350px;
            
             gap:5rem
         }
-    
+       
+   }
+   @media screen and (max-width:484px){
+    .header .content .left h1{
+        font-size: 2.5rem;
+    }
+   .buttons .btn{
+width: 7rem;
+   }
+   .buttons .btn-light{
+    width: 7rem;
+   }
    }

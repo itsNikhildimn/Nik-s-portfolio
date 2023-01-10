@@ -5,15 +5,17 @@
     align-items: center;
     justify-content: center;
     padding: 15vh 0;
+    margin-inline: auto;
 }
-.aboutus .grid-box{
-    grid-template-columns: 1fr 1fr;
- gap: 10%;
- align-items: center;
- justify-content: center;
+.aboutus .flex-box{
+ gap: 5rem;
+
 }
-
-
+.aboutus .leftContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .aboutus .leftContent img{
     /* width: 100%; */
     border: 20px solid rgba(236, 236, 236, 1);
@@ -21,7 +23,8 @@ border-right: none;
  max-width: 400px;
 }
 .aboutus .rightContent{
-    padding: 1rem 5rem 0  0;
+    max-width: 580px;
+    padding: 1rem 0rem 0  0;
 }
 .aboutus .rightContent h2{
 margin: 2rem 0;
@@ -34,10 +37,12 @@ margin: 3rem 0;
 line-height: 1.3em;
 }
 .aboutus .rightContent .skills{
+    max-width :508px; ;
 display: flex;
+align-items: center;
+justify-content: space-between;
 
-gap: 2rem;
-margin-top: 1rem;
+
 }
 .aboutus .rightContent .skills .col{
     display: flex;
@@ -46,24 +51,37 @@ margin-top: 1rem;
     flex-direction: column;
     gap:1rem
 }
+.CircularProgressbar{
+    max-width: 102px;
+}
+@media screen and (max-width:1024px){
+    .aboutus .flex-box{
+        flex-direction: column-reverse;
+        
+      } 
+      .CircularProgressbar{
+        width: 70%;
+    }
+}
+
 @media screen and (max-width:640px){
-    .aboutus .grid-box{
-        grid-template-columns: 1fr;
-     gap: 0%;
-    } 
+ 
     .aboutus .rightContent .skills{
         display: flex;
-        
+    
         gap: 2rem;
         margin-top: 0rem;
         }
         .aboutus .rightContent{
             padding: 1rem 0rem 0 0rem;
         }
-        .aboutus .rightContent .skills{
-            flex-direction: column;
-        }
+      
         .CircularProgressbar{
-            width: 50%;
+            width: 90%;
+        }
+}
+@media screen and (max-width:450px) {
+      .aboutus .rightContent .skills{
+            flex-direction: column;
         }
 }

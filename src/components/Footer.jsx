@@ -26,7 +26,7 @@ const Footer = () => {
                     </h3>
                     </div>
                 </div>
-
+<div className="media">
                 <div class="contactus">
                     <h3>Contact <span>Us</span></h3>
                     <hr style={{width:'30%',margin:'.2rem 0 0 0'}}/>
@@ -50,7 +50,7 @@ It is a long established fact that a reader will be distracted</p>
                   <textarea name="message" rows="10" placeholder="Type Message"></textarea>
                     <button class="btn">Send Message</button>
                 </div>
-
+                </div>
             </div>
         </div>
         <div className="cite">

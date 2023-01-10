@@ -8,6 +8,25 @@
   <title>Document</title>
 </head>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script>
+  $('.portfolio-items').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+   $('nav ul li').click(function(){
+    $('nav ul li').removeclassName('active');
+    $(this).addclassName('active');
+     
+    var selector = $(this).attr('data-filter');
+    $('.portfolio-item').isotop({
+      fiter:selector
+    });
+    return false;
+   })
+</script>
 <body>
 <div id="root"></div>
 </body>

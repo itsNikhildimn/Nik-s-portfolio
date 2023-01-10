@@ -14,23 +14,53 @@ const Portfolio = () => {
                 <h2>Featured Work</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aspernatur voluptatem maxime, quis inventore necessitatibus provident ad doloribus iste harum.</p>
             </div>
-            <nav class="worknav">
+            <nav className="portfolio-menu">
                 <ul>
-                    <li>All</li>
-                    <li>Branding</li>
-                    <li>Web</li>
-                    <li>Print</li>
-                    <li>Design</li>
-                    <li>3d Work</li>
+                    <li className='active' data-filter='*'>All</li>
+                    <li data-filter='.branding'>Branding</li>
+                    <li data-filter='.web'>Web</li>
+                    <li data-filter= '.print'>Print</li>
+                    <li data-filter='.design'>Design</li>
+                    <li data-filter = '3dwork'>3d Work</li>
                 </ul>
             </nav>
-            <div class="grid-box">
+            <div className="portfolio-items">
+                <div className="item branding">
                 <img src={img3} alt=""/>
+                </div>
+                <div className="item web">
                 <img src={img2} alt=""/>
+                </div>
+                <div className="item print">
                 <img src={img1} alt=""/>
+                </div>
+                <div className="item design">
                 <img src={img1} alt=""/>
+                </div>
+                <div className="item 3dwork">
                 <img src={img2} alt=""/>
+                </div>
+                <div className="item 3dwork">
                 <img src={img3} alt=""/>
+                </div>
+                <div className="item branding">
+                <img src={img3} alt=""/>
+                </div>
+                <div className="item web">
+                <img src={img2} alt=""/>
+                </div>
+                <div className="item print">
+                <img src={img1} alt=""/>
+                </div>
+                <div className="item design">
+                <img src={img1} alt=""/>
+                </div>
+                <div className="item 3dwork">
+                <img src={img2} alt=""/>
+                </div>
+                <div className="item 3dwork">
+                <img src={img3} alt=""/>
+                </div>
             </div>
         </div>
 

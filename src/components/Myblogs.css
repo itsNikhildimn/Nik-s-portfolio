@@ -4,7 +4,8 @@
 }
 .blogs .head{
 text-align: center;
-padding: 0 12rem ;
+max-width: 740px;
+margin-inline: auto;
 }
 .blogs .head h2{
     margin: .3rem 0 1rem 0;
@@ -29,6 +30,8 @@ padding: 0 12rem ;
     padding: 1rem;
 }
 .blogs .column{
+    max-width: 373px;
+    max-height: 485px;
     box-shadow: 0 0 10px 7px black;
 }
 .blogs .column:hover{

@@ -2,23 +2,29 @@
    padding: 12vh 0;
 }
 .whatwedo .topContent{
-    text-align: center;
-   max-width: 600px;
-   margin-inline: auto;
+    margin-inline: auto;
+text-align: center;
+   max-width: 740px;
+ 
 }
 .whatwedo .topContent h2{
     margin: .5rem 0;
 }
 .whatwedo .topContent p{
-               margin: 1.5rem 0;
+    margin: 1.5rem 0;
 }
 .bottomContent{
     margin-top: 10vh;
+
 }
 .bottomContent .flex-box{
 gap: 3rem;
+align-items: center;
+justify-content: center;
+
 }
 .bottomContent .column{
+    max-width: 400px;
 text-align: center;
 display: flex;
 justify-content: center;
@@ -39,6 +45,12 @@ gap: 1rem;
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+}
+@media screen and (max-width:1024px){
+    .bottomContent .flex-box{
+        gap: 3rem;
+        flex-direction: column;
+        }
 }
 @media screen and (max-width:640px){
     .whatwedo .topContent{

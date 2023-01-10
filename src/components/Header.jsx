@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import './NavBarStyles.css';
+
 import { FaBars, FaTimes } from 'react-icons/fa';
 import headimg from '../assets/headimg.avif';
 import "./HeaderStyles.css";
@@ -31,9 +31,9 @@ const Header = () => {
                     <div className="hamburger" onClick={handleClick}>
                        
                         {click ? (
-                            <FaTimes size={20} style={{ color: "#fff" }} />
+                            <FaTimes size={30} style={{ color: "#fff" }} />
                         ) : (
-                            <FaBars size={20} style={{ color: "#fff" }} />
+                            <FaBars size={30} style={{ color: "#fff" }} />
                         )}
                     </div>
                 
